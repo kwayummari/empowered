@@ -2,6 +2,7 @@ import 'package:empowered/src/screens/branch/branchManagement.dart';
 import 'package:empowered/src/screens/dashboard/dashboard.dart';
 import 'package:empowered/src/screens/grn/completedGrnLists.dart';
 import 'package:empowered/src/screens/grn/grn.dart';
+import 'package:empowered/src/screens/homePage/homePage.dart';
 import 'package:empowered/src/screens/inventory/inventoryManagement.dart';
 import 'package:empowered/src/screens/purchaseOrder/purchaseOrder.dart';
 import 'package:empowered/src/screens/roles/permissions.dart';
@@ -9,8 +10,7 @@ import 'package:empowered/src/screens/roles/rolesManagement.dart';
 import 'package:empowered/src/screens/supplier/supplierManagement.dart';
 import 'package:empowered/src/screens/userManagement/userManagement.dart';
 import 'package:empowered/src/utils/routes/route-names.dart';
-import 'package:empowered/src/screens/authentication/login.dart';
-import 'package:empowered/src/screens/authentication/registration.dart';
+import 'package:empowered/src/screens/homePage/registration.dart';
 import 'package:empowered/src/screens/splash/splash.dart';
 import 'package:go_router/go_router.dart';
 
@@ -19,7 +19,7 @@ final GoRouter router = GoRouter(
   routes: [
     GoRoute(
       path: RouteNames.login,
-      builder: (context, state) => Login(),
+      builder: (context, state) => Homepage(),
     ),
     GoRoute(
       path: RouteNames.registration,

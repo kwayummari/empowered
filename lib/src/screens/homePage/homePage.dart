@@ -1,17 +1,17 @@
-import 'package:empowered/src/screens/authentication/loginForm.dart';
-import 'package:empowered/src/screens/authentication/sideTabFom.dart';
+import 'package:empowered/src/screens/homePage/loginForm.dart';
+import 'package:empowered/src/screens/homePage/sideTabFom.dart';
 import 'package:empowered/src/utils/app_const.dart';
 import 'package:flutter/material.dart';
 import 'package:empowered/src/widgets/app_base_screen.dart';
 
-class Login extends StatefulWidget {
-  const Login({super.key});
+class Homepage extends StatefulWidget {
+  const Homepage({super.key});
 
   @override
-  State<Login> createState() => _LoginState();
+  State<Homepage> createState() => _HomepageState();
 }
 
-class _LoginState extends State<Login> {
+class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return AppBaseScreen(
