@@ -20,9 +20,9 @@ class _TopHeaderMobileState extends State<TopHeaderMobile> {
         Container(
           color: AppConst.black,
           width: MediaQuery.of(context).size.width,
-          height: 50,
+          height: 60,
           child: Padding(
-            padding: const EdgeInsets.only(left: 10, right: 10),
+            padding: const EdgeInsets.only(left: 20, right: 20),
             child: Row(
               children: [
                 Icon(
@@ -58,7 +58,7 @@ class _TopHeaderMobileState extends State<TopHeaderMobile> {
           ),
         ),
         SizedBox(
-          height: 20,
+          height: 10,
         ),
         Padding(
           padding: const EdgeInsets.only(left: 10, right: 10),
