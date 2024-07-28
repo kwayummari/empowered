@@ -15,6 +15,7 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return AppBaseScreen(
+      padding: const EdgeInsets.all(0.0),
       bgcolor: AppConst.white,
       isvisible: false,
       backgroundImage: false,

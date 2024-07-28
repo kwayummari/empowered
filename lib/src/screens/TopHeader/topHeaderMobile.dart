@@ -20,6 +20,7 @@ class _TopHeaderMobileState extends State<TopHeaderMobile> {
         Container(
           color: AppConst.black,
           width: MediaQuery.of(context).size.width,
+          height: 50,
           child: Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: Row(
