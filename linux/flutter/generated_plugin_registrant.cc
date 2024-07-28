@@ -14,6 +14,6 @@ void fl_register_plugins(FlPluginRegistry* registry) {
       fl_plugin_registry_get_registrar_for_plugin(registry, "PrintingPlugin");
   printing_plugin_register_with_registrar(printing_registrar);
   g_autoptr(FlPluginRegistrar) url_launcher_linux_registrar =
-      fl_plugin_registry_get_registrar_for_plugin(registry, "UrlLaunchempoweredlugin");
+      fl_plugin_registry_get_registrar_for_plugin(registry, "UrlLauncherPlugin");
   url_launcher_plugin_register_with_registrar(url_launcher_linux_registrar);
 }

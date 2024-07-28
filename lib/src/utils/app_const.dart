@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 abstract class AppConst {
-  static Color primary = HexColor('#0d6efd');
+  static Color primary = HexColor('#F0832E');
   static Gradient primaryGradient = LinearGradient(
     colors: [HexColor('#150572'), HexColor('#2eb2be')],
     begin: Alignment.bottomCenter,

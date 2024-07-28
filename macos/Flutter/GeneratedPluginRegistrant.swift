@@ -12,11 +12,11 @@ import share_plus
 import shared_preferences_foundation
 import url_launcher_macos
 
-func RegisterGeneratedPlugins(registry: FluttempoweredluginRegistry) {
+func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
   ConnectivityPlugin.register(with: registry.registrar(forPlugin: "ConnectivityPlugin"))
-  PathProvidempoweredlugin.register(with: registry.registrar(forPlugin: "PathProvidempoweredlugin"))
+  PathProviderPlugin.register(with: registry.registrar(forPlugin: "PathProviderPlugin"))
   PrintingPlugin.register(with: registry.registrar(forPlugin: "PrintingPlugin"))
   SharePlusMacosPlugin.register(with: registry.registrar(forPlugin: "SharePlusMacosPlugin"))
   SharedPreferencesPlugin.register(with: registry.registrar(forPlugin: "SharedPreferencesPlugin"))
-  UrlLaunchempoweredlugin.register(with: registry.registrar(forPlugin: "UrlLaunchempoweredlugin"))
+  UrlLauncherPlugin.register(with: registry.registrar(forPlugin: "UrlLauncherPlugin"))
 }

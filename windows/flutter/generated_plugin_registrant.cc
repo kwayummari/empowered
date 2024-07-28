@@ -10,7 +10,7 @@
 #include <share_plus/share_plus_windows_plugin_c_api.h>
 #include <url_launcher_windows/url_launcher_windows.h>
 
-void Registempoweredlugins(flutter::PluginRegistry* registry) {
+void RegisterPlugins(flutter::PluginRegistry* registry) {
   PrintingPluginRegisterWithRegistrar(
       registry->GetRegistrarForPlugin("PrintingPlugin"));
   SharePlusWindowsPluginCApiRegisterWithRegistrar(

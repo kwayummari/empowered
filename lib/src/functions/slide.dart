@@ -6,6 +6,6 @@ class SlideFunction {
   Future<void> login(context) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('intro', 'done');
-    Navigator.pushNamed(context, RouteNames.login);
+    Navigator.pushNamed(context, RouteNames.homePage);
   }
 }

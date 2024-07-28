@@ -12,7 +12,7 @@ class SplashFunction {
     await Future.delayed(Duration(seconds: 1), () {});
 
     if (id == null || id.toString().isEmpty) {
-      context.go(RouteNames.login);
+      context.go(RouteNames.homePage);
     } else {
       context.go(RouteNames.dashboard);
     }

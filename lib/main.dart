@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
           ],
         ),
         debugShowCheckedModeBanner: false,
-        title: 'JAMSOLUTIONS',
+        title: 'EMPOWERED FOR CHANGE',
         theme: ThemeData(
             cardColor: AppConst.primary,
             highlightColor: AppConst.primary,
