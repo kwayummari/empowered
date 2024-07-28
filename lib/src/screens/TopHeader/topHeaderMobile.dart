@@ -54,31 +54,6 @@ class _TopHeaderMobileState extends State<TopHeaderMobile> {
                   color: AppConst.primary,
                 ),
                 Spacer(),
-                Icon(
-                  FontAwesomeIcons.facebook,
-                  color: AppConst.primary,
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Icon(
-                  FontAwesomeIcons.twitter,
-                  color: AppConst.primary,
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Icon(
-                  FontAwesomeIcons.linkedin,
-                  color: AppConst.primary,
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Icon(
-                  FontAwesomeIcons.instagram,
-                  color: AppConst.primary,
-                ),
               ],
             ),
           ),
