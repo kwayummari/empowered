@@ -13,76 +13,73 @@ class TopHeaderMobile extends StatefulWidget {
 class _TopHeaderMobileState extends State<TopHeaderMobile> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 10),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            color: AppConst.black,
-            width: MediaQuery.of(context).size.width,
-            child: Padding(
-              padding: const EdgeInsets.only(left: 10, right: 10),
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.email,
-                    color: AppConst.primary,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  AppText(
-                    txt: 'Company@domain.com',
-                    size: 15,
-                    color: AppConst.primary,
-                  ),
-                  Spacer(),
-                  Icon(
-                    FontAwesomeIcons.locationDot,
-                    color: AppConst.primary,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  AppText(
-                    txt: 'Jl. Raya Puputan \n No 142, TZ - 80234',
-                    size: 15,
-                    color: AppConst.primary,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Padding(
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Container(
+          color: AppConst.black,
+          width: MediaQuery.of(context).size.width,
+          child: Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Image.asset(
-                    'assets/logo.png',
-                    width: 200,
-                  ),
+                Icon(
+                  Icons.email,
+                  color: AppConst.primary,
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                AppText(
+                  txt: 'Company@domain.com',
+                  size: 15,
+                  color: AppConst.primary,
                 ),
                 Spacer(),
                 Icon(
-                  Icons.menu,
-                  size: 50,
+                  FontAwesomeIcons.locationDot,
                   color: AppConst.primary,
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                AppText(
+                  txt: 'Jl. Raya Puputan \n No 142, TZ - 80234',
+                  size: 15,
+                  color: AppConst.primary,
+                ),
+                SizedBox(
+                  width: 10,
                 ),
               ],
             ),
-          )
-        ],
-      ),
+          ),
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 10, right: 10),
+          child: Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.asset(
+                  'assets/logo.png',
+                  width: 200,
+                ),
+              ),
+              Spacer(),
+              Icon(
+                Icons.menu,
+                size: 50,
+                color: AppConst.primary,
+              ),
+            ],
+          ),
+        )
+      ],
     );
   }
 }
