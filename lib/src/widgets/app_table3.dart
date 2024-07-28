@@ -49,15 +49,15 @@ class ReusableTable3 extends StatefulWidget {
 }
 
 class _ReusableTable3State extends State<ReusableTable3> {
-  int _rowsPempoweredage = PaginatedDataTable.defaultRowsPempoweredage;
+  int _rowsPerPage = PaginatedDataTable.defaultRowsPerPage;
   int _sortColumnIndex = 0;
   bool _sortAscending = true;
 
-  List<int> availableRowsPempoweredage = const <int>[
-    PaginatedDataTable.defaultRowsPempoweredage,
-    PaginatedDataTable.defaultRowsPempoweredage * 2,
-    PaginatedDataTable.defaultRowsPempoweredage * 5,
-    PaginatedDataTable.defaultRowsPempoweredage * 10,
+  List<int> availableRowsPerPage = const <int>[
+    PaginatedDataTable.defaultRowsPerPage,
+    PaginatedDataTable.defaultRowsPerPage * 2,
+    PaginatedDataTable.defaultRowsPerPage * 5,
+    PaginatedDataTable.defaultRowsPerPage * 10,
   ];
 
   void _sort<T>(Comparable<T> Function(Map<String, dynamic> d) getField,
@@ -116,11 +116,11 @@ class _ReusableTable3State extends State<ReusableTable3> {
           ),
         ],
         source: dataSource,
-        rowsPempoweredage: _rowsPempoweredage,
-        availableRowsPempoweredage: availableRowsPempoweredage,
-        onRowsPempoweredageChanged: (int? value) {
+        rowsPerPage: _rowsPerPage,
+        availableRowsPerPage: availableRowsPerPage,
+        onRowsPerPageChanged: (int? value) {
           setState(() {
-            _rowsPempoweredage = value!;
+            _rowsPerPage = value!;
           });
         },
         sortColumnIndex: _sortColumnIndex,
