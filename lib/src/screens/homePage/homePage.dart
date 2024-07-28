@@ -14,20 +14,24 @@ class Homepage extends StatefulWidget {
 class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
-    const double mobileBreakpoint = 600.0;
-
     return AppBaseScreen(
       bgcolor: AppConst.white,
       isvisible: false,
       backgroundImage: false,
       backgroundAuth: false,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          screenWidth < mobileBreakpoint ? TopHeaderMobile() : TopHeader(),
-        ],
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          const double mobileBreakpoint = 600.0;
+          return Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              constraints.maxWidth < mobileBreakpoint
+                  ? TopHeaderMobile()
+                  : TopHeader(),
+            ],
+          );
+        },
       ),
     );
   }
