@@ -1,6 +1,5 @@
-import 'package:empowered/src/screens/carousel/carousel.dart';
+import 'package:empowered/src/screens/TopHeader/TopHeader.dart';
 import 'package:empowered/src/utils/app_const.dart';
-import 'package:empowered/src/widgets/app_text.dart';
 import 'package:flutter/material.dart';
 import 'package:empowered/src/widgets/app_base_screen.dart';
 
@@ -23,7 +22,7 @@ class _HomepageState extends State<Homepage> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Carousel()
+          TopHeader()
         ],
       ),
     );
