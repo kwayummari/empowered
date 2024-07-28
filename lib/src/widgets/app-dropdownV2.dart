@@ -4,6 +4,7 @@ import 'package:empowered/src/utils/app_const.dart';
 import 'package:empowered/src/widgets/app_text.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class DropdownTextFormFieldV2 extends StatefulWidget {
   final String labelText;
   final Icon? icon;
