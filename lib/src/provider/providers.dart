@@ -4,12 +4,11 @@ import 'package:empowered/src/provider/loadingProvider.dart';
 import 'package:empowered/src/provider/rowProvider.dart';
 
 class MyProviderList {
-  static List<ChangeNotifiempoweredrovider> providers = [
-    ChangeNotifiempoweredrovider<LoadingProvider>(
-        create: (context) => LoadingProvider()),
-    ChangeNotifiempoweredrovider<RowDataProvider>(
+  static List<ChangeNotifierProvider> providers = [
+    ChangeNotifierProvider<LoadingProvider>(create: (context) => LoadingProvider()),
+    ChangeNotifierProvider<RowDataProvider>(
         create: (context) => RowDataProvider()),
-    ChangeNotifiempoweredrovider<TableDataNotifier>(
+    ChangeNotifierProvider<TableDataNotifier>(
       create: (context) => TableDataNotifier(),
     ),
   ];

@@ -5,15 +5,14 @@ class dropdownShimmer extends StatefulWidget {
   final double height;
   final double borderRadius;
 
-  dropdownShimmer(
-      {required this.width, required this.height, required this.borderRadius});
+  dropdownShimmer({required this.width, required this.height, required this.borderRadius});
 
   @override
   _dropdownShimmerState createState() => _dropdownShimmerState();
 }
 
 class _dropdownShimmerState extends State<dropdownShimmer>
-    with SingleTickempoweredroviderStateMixin {
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _gradientPosition;
 
@@ -52,7 +51,7 @@ class _dropdownShimmerState extends State<dropdownShimmer>
                   Colors.grey.shade300,
                 ],
                 stops: [
-                  _gradientPosition.value.abs(),
+                  _gradientPosition.value.abs(  ),
                   (_gradientPosition.value.abs() + 0.2).clamp(0.0, 1.0),
                   (_gradientPosition.value.abs() + 0.4).clamp(0.0, 1.0),
                 ],
