@@ -1,5 +1,3 @@
-import 'package:empowered/src/screens/TopHeader/TopHeader.dart';
-import 'package:empowered/src/screens/TopHeader/topHeaderMobile.dart';
 import 'package:empowered/src/screens/carouselPage/carouselPage.dart';
 import 'package:empowered/src/utils/app_const.dart';
 import 'package:flutter/material.dart';

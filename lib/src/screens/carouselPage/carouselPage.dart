@@ -104,11 +104,14 @@ class _CarouselPageState extends State<CarouselPage> {
                       children: [
                         Positioned(
                           top: 300,
-                          left: 100,
+                          left: 200,
                           child: Container(
-                            width: 400,
-                            height: 400,
-                            color: AppConst.primary, // Customize this as needed
+                            width: 500,
+                            height: 500,
+                            decoration: BoxDecoration(
+                              color: AppConst.primary,
+                              borderRadius: BorderRadius.circular(40.0),
+                            ),
                           ),
                         ),
                         Padding(
