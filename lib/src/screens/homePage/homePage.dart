@@ -21,20 +21,12 @@ class _HomepageState extends State<Homepage> {
       isvisible: false,
       backgroundImage: false,
       backgroundAuth: false,
-      child: LayoutBuilder(
-        builder: (context, constraints) {
-          const double mobileBreakpoint = 600.0;
-          return Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              constraints.maxWidth < mobileBreakpoint
-                  ? TopHeaderMobile()
-                  : TopHeader(),
-              CarouselPage()
-            ],
-          );
-        },
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          CarouselPage()
+        ],
       ),
     );
   }
