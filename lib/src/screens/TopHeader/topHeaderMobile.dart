@@ -151,12 +151,62 @@ class _TopHeaderMobileState extends State<TopHeaderMobile>
                         height: MediaQuery.of(context).size.height,
                         color: Colors.white,
                         child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Text('This is a drawer-like popup'),
-                            ElevatedButton(
-                              onPressed: _closeDrawer,
-                              child: Text('Close'),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: ListTile(
+                                title: AppText(
+                                  txt: 'Home',
+                                  size: 18,
+                                  color: AppConst.secondary,
+                                  weight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: ListTile(
+                                title: AppText(
+                                  txt: 'About us',
+                                  size: 18,
+                                  color: AppConst.secondary,
+                                  weight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: ListTile(
+                                title: AppText(
+                                  txt: 'Events',
+                                  size: 18,
+                                  color: AppConst.secondary,
+                                  weight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: ListTile(
+                                title: AppText(
+                                  txt: 'Blog',
+                                  size: 18,
+                                  color: AppConst.secondary,
+                                  weight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: ListTile(
+                                title: AppText(
+                                  txt: 'Contact',
+                                  size: 18,
+                                  color: AppConst.secondary,
+                                  weight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                           ],
                         ),
