@@ -3,6 +3,7 @@ import 'package:hexcolor/hexcolor.dart';
 
 abstract class AppConst {
   static Color primary = HexColor('#F0832E');
+  static Color subPrimary = HexColor('#FFB781');
   static Color secondary = HexColor('#242F65');
   static Gradient primaryGradient = LinearGradient(
     colors: [HexColor('#150572'), HexColor('#2eb2be')],
