@@ -3,21 +3,18 @@ import 'package:empowered/src/widgets/app_button.dart';
 import 'package:empowered/src/widgets/app_text.dart';
 import 'package:flutter/material.dart';
 
-class CarouselImage extends StatelessWidget {
-  const CarouselImage({super.key});
+class CarouselImageMobile extends StatelessWidget {
+  const CarouselImageMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 100, right: 100),
+      padding: const EdgeInsets.only(left: 20, right: 20),
       child: Row(
         children: [
-          SizedBox(
-            width: 10,
-          ),
           Container(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
@@ -25,18 +22,21 @@ class CarouselImage extends StatelessWidget {
                 ),
                 AppText(
                   txt: 'Girls and Women \nEmpowerment',
-                  size: 60,
+                  size: 20,
                   weight: FontWeight.bold,
                   color: AppConst.primary,
                 ),
                 SizedBox(
                   height: 10,
                 ),
-                AppText(
-                  txt:
-                      'Tempora class excepturi. Earum ipsam velit ex montes, \n explicabo ex adipisicing labore, fames quibusdam praesentium, \n nostrud eveniet, rutrum.',
-                  size: 20,
-                  color: AppConst.secondary,
+                Container(
+                  width: 250,
+                  child: AppText(
+                    txt:
+                        'Tempora class excepturi. Earum ipsam velit ex montes, \n explicabo ex adipisicing labore, fames quibusdam praesentium, \n nostrud eveniet, rutrum.',
+                    size: 15,
+                    color: AppConst.secondary,
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -54,7 +54,7 @@ class CarouselImage extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      width: 20,
+                      width: 10,
                     ),
                     CircleAvatar(
                       child: Icon(
@@ -76,27 +76,25 @@ class CarouselImage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: 30,
+            width: 10,
           ),
           Stack(
             children: [
               Positioned(
-                top: 300,
-                left: 200,
+                top: 60,
+                left: 40,
                 child: Container(
-                  width: 500,
-                  height: 500,
+                  width: 100,
+                  height: 100,
                   decoration: BoxDecoration(
                     color: AppConst.subPrimary,
-                    borderRadius: BorderRadius.circular(40.0),
+                    borderRadius: BorderRadius.circular(10.0),
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Image.asset(
-                  'assets/carousel.png',
-                ),
+              Image.asset(
+                'assets/carousel.png',
+                width: 200,
               ),
             ],
           ),

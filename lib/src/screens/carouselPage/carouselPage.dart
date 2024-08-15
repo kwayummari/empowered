@@ -1,5 +1,6 @@
 import 'package:empowered/src/screens/carouselPage/TopHeader/TopHeader.dart';
 import 'package:empowered/src/screens/carouselPage/TopHeader/topHeaderMobile.dart';
+import 'package:empowered/src/screens/carouselPage/carouselImageMobile.dart';
 import 'package:empowered/src/screens/carouselPage/carouselimage.dart';
 import 'package:flutter/material.dart';
 
@@ -34,7 +35,8 @@ class _CarouselPageState extends State<CarouselPage> {
               SizedBox(
                 height: 10,
               ),
-              CarouselImage()
+              constraints.maxWidth < mobileBreakpoint
+                  ? CarouselImageMobile() : CarouselImage()
             ],
           ),
         ),
